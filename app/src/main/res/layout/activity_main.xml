@@ -27,24 +27,36 @@
             android:layout_marginTop="50dp"
             app:srcCompat="@drawable/portrait" />
 
-        <Button
-            android:id="@+id/workHistoryButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="Work history" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/callButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Call Shayan" />
+            <Button
+                android:id="@+id/workHistoryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work history" />
 
-        <Button
-            android:id="@+id/emailButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email Shayan" />
+            <Button
+                android:id="@+id/callButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call Shayan" />
+
+            <Button
+                android:id="@+id/emailButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Shayan" />
+
+            <Button
+                android:id="@+id/educationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education" />
+        </LinearLayout>
 
     </LinearLayout>
 

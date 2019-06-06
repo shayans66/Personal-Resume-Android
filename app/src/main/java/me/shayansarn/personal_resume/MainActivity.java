@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Button workHistoryButton;
     Button callButton;
     Button emailButton;
+    Button educationButton;
 
 
 
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         workHistoryButton = findViewById(R.id.workHistoryButton);
         callButton = findViewById(R.id.callButton);
         emailButton = findViewById(R.id.emailButton);
+        educationButton = findViewById(R.id.educationButton);
 
 
         workHistoryButton.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +55,14 @@ public class MainActivity extends AppCompatActivity {
                 emailIntent.putExtra(Intent.EXTRA_TEXT, "I really like your resume!");
                 startActivity(emailIntent);
 
+            }
+        });
+
+        educationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToTheOtherActivity = new Intent(getApplicationContext(), EducationActivity.class);
+                startActivity(goToTheOtherActivity);
             }
         });
 
